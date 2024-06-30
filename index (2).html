@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban/Pick </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ban/Pick Geshin</h1>
+        <div class="team-section" id="team-a-section">
+            <h2>Team 1</h2>
+            <div class="ban-pick-section">
+                <div>
+                    <h3>Banned nhân vật</h3>
+                    <ul id="team-a-ban-list"></ul>
+                    <input type="text" id="team-a-ban-input" placeholder="Enter character to ban">
+                    <button onclick="banCharacter('team-a')">Ban</button>
+                </div>
+                <div>
+                    <h3>Picked nhân vật</h3>
+                    <ul id="team-a-pick-list"></ul>
+                    <input type="text" id="team-a-pick-input" placeholder="Enter character to pick">
+                    <button onclick="pickCharacter('team-a')">Pick</button>
+                </div>
+                <p id="team-a-timer">03:00</p>
+            </div>
+        </div>
+        <div class="team-section" id="team-b-section">
+            <h2>Team 2</h2>
+            <div class="ban-pick-section">
+                <div>
+                    <h3>Banned nhân vật</h3>
+                    <ul id="team-b-ban-list"></ul>
+                    <input type="text" id="team-b-ban-input" placeholder="Enter character to ban">
+                    <button onclick="banCharacter('team-b')">Ban</button>
+                </div>
+                <div>
+                    <h3>Picked nhân vật</h3>
+                    <ul id="team-b-pick-list"></ul>
+                    <input type="text" id="team-b-pick-input" placeholder="Enter character to pick">
+                    <button onclick="pickCharacter('team-b')">Pick</button>
+                </div>
+                <p id="team-b-timer">03:00</p>
+            </div>
+        </div>
+        <div class="history-section">
+            <h2>Ban/Pick History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
